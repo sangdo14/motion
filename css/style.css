@@ -49,6 +49,12 @@ ul, ol li {
   color: white;
   cursor: pointer;
 }
+#wrap header p {
+  font-size: 1.6rem;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
 #wrap .textBox {
   position: absolute;
   top: 50%;
@@ -73,7 +79,62 @@ ul, ol li {
 #wrap .textBox .btnOpen:hover {
   animation: bouncing 0.6s ease-in-out infinite;
 }
+#wrap footer {
+  position: absolute;
+  left: 10%;
+  bottom: 3vh;
+  width: 80%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  overflow: hidden;
+}
+#wrap footer .line {
+  width: 100%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#wrap footer .sns {
+  display: flex;
+  gap: 14px;
+  font-size: 1.2rem;
+}
+#wrap footer p {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
 
+@media screen and (max-width: 849px) {
+  #wrap header .gnb {
+    display: none;
+  }
+  #wrap header p {
+    display: block;
+  }
+  #wrap .textBox h2 {
+    font-size: 15vw;
+  }
+  #wrap .textBox .btnOpen {
+    margin-top: 20px;
+  }
+  #wrap footer {
+    flex-wrap: wrap;
+  }
+  #wrap footer .sns {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  #wrap footer p {
+    width: 100%;
+    text-align: center;
+  }
+}
 @keyframes bouncing {
   0% {
     transform: scale(1);
